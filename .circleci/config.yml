@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Run tests
           command: |
-            npm pretest
+            npm run pretest
             npm test
 
       - run:
