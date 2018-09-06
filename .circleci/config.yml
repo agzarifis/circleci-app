@@ -45,11 +45,11 @@ jobs:
 
       - run:
           name: Start Selenium
-          command: webdriver-manager start
+          command: sudo webdriver-manager start
 
       - run:
           name: Start Serverless in offline mode
-          command: serverless offline start
+          command: serverless offline start &
 
       - run:
           name: Run tests
