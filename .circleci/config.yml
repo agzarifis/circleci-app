@@ -41,7 +41,7 @@ jobs:
       # run tests!
       - run:
           name: Setup Selenium binaries
-          command: webdriver-manager update
+          command: sudo webdriver-manager update
 
       - run:
           name: Start Selenium
