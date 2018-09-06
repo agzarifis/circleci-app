@@ -50,7 +50,7 @@ jobs:
 
       - run:
           name: Start Serverless in offline mode
-          command: serverless offline start
+          command: sudo serverless offline start
           background: true
 
       - run:
