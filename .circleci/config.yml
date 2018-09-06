@@ -40,10 +40,20 @@ jobs:
 
       # run tests!
       - run:
+          name: Setup Selenium binaries
+          command: webdriver-manager update
+
+      - run:
+          name: Start Selenium
+          command: webdriver-manager start
+
+      - run:
+          name: Start Serverless in offline mode
+          command: serverless offline start
+
+      - run:
           name: Run tests
-          command: |
-            npm run pretest
-            npm test
+          command: npm test
 
       - run:
           name: Deploy application
