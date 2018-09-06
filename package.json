@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "serverless offline start & webdriver-manager start &",
     "test": "protractor conf.js"
   },
   "keywords": [],
