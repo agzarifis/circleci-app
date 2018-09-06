@@ -55,7 +55,9 @@ jobs:
 
       - run:
           name: Run tests
-          command: npm test
+          command: |
+            sleep 5
+            npm test
 
       - run:
           name: Deploy application
