@@ -64,5 +64,5 @@ jobs:
           command: sls deploy
 
       - store_test_results:
-          path: /testresults/
+          path: testresults/
 
