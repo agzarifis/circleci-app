@@ -1,4 +1,5 @@
 exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
-  specs: ['button-spec.js']
+  specs: ['button-spec.js'],
+  resultJsonOutputFile: './testResults.json'
 };
